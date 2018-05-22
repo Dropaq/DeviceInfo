@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        git 'git@github.com:Dropaq/DeviceInfo.git'
+        git(url: 'git@github.com:Dropaq/DeviceInfo.git', credentialsId: 'github')
       }
     }
   }
